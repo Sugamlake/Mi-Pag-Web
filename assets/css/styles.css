@@ -1,0 +1,32 @@
+#avatar {
+	height: 20rem;
+	width: 20rem;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	border-radius: 10%;
+	background-size: 100% auto;
+	margin: 0 auto;
+}
+
+body {
+	background-image: url("assets/tech/glasses_background.jpeg");
+	background-size: 50rem;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+}
+
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
