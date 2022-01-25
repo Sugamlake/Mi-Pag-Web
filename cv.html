@@ -9,27 +9,47 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark bg-gradient portfolio-navbar gradient">
-        <div class="container"><a class="navbar-brand logo" href="#">Susana</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="#">Susana Gamboa</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects-grid-cards.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link active" href="cv.html">CV</a></li>
-                    <li class="nav-item"><a class="nav-link" href="hire-me.html">Hire me</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contactme
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <main class="page cv-page">
         <section class="portfolio-block block-intro border-bottom">
-            <div class="container">
-                <div class="avatar" style="background-image:url(&quot;assets/img/avatars/avatar.jpg&quot;);"></div>
-                <div class="about-me">
-                    <p>Hello! I am <strong>John Smith</strong>. I work as interface and front end developer. I have passion for pixel perfect, minimal and easy to use interfaces.</p><a class="btn btn-outline-primary" role="button" href="#">Hire me</a>
+            <div class="container"> <!--primero se establece la clase contenedor para hacer la estructura del grid o cajas para foto y texto-->
+                <div class="row"> <!--paso 2 crear un div con clase row (fila) dentro de la fila ponemos las columas y luego se pone la clase col-->
+                    <div class="col contenedor-foto">
+                        <div id="avatar" style="background-image:url(&quot;assets/img/avatars/avatar.jpg&quot;);"></div>
+                    </div>
+                    <div class="about-me col">
+                        <p>Hello! my name is <strong>Susana</strong> and I am doing a Professional Certification in FullStack Web Development with Mern from MIT. I am passionate about 
+                        the world of programming and software development, 
+                        with knowledge in Html, CSS3, JavaScript, (for now)
+                     
+                        with experience in automation engineering. In 
+                        addition, I enjoy working as a team, and I always 
+                        maintain the interest in giving solutions to 
+                        technological problems, I am looking for an internship 
+                        to strengthen and enhance my knowledge in a company 
+                        that gives me opportunities to get the best of my 
+                        skills... do you want to know me? let's have a virtual coffee</p>
+    
+                    </div>
                 </div>
             </div>
         </section>
@@ -37,17 +57,17 @@
             <div class="container">
                 <div class="work-experience group">
                     <div class="heading">
-                        <h2 class="text-center">Work Experience</h2>
+                        <h2 class="text-center">Learning Experience</h2>
                     </div>
                     <div class="item">
                         <div class="row">
                             <div class="col-md-6">
                                 <h3>Web Developer</h3>
-                                <h4 class="organization">Amazing Co.</h4>
+                                <h4 class="organization">MIT Professional Certification in FullStack with MERN</h4>
                             </div>
-                            <div class="col-md-6"><span class="period">10/2013 - 04/2015</span></div>
+                            <div class="col-md-6"><span class="period">10/2022 - 10/2021</span></div>
                         </div>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget velit ultricies, feugiat est sed, efficitur nunc, vivamus vel accumsan dui.</p>
+                        <p class="text-muted">TEXTO DESCIPTIVO</p>
                     </div>
                     <div class="item">
                         <div class="row">
@@ -102,15 +122,15 @@
                                 <h2>Skills</h2>
                                 <h3>HTML</h3>
                                 <div class="progress">
-                                    <div class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden">100%</span></div>
+                                    <div class="progress-bar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90" style="width: 90%;"><span class="visually-hidden">90%</span></div>
                                 </div>
-                                <h3>PHP</h3>
+                                <h3>CSS5</h3>
                                 <div class="progress">
-                                    <div class="progress-bar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"><span class="visually-hidden">90%</span></div>
+                                    <div class="progress-bar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60" style="width: 90%;"><span class="visually-hidden">60%</span></div>
                                 </div>
                                 <h3>JavaScript</h3>
                                 <div class="progress">
-                                    <div class="progress-bar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="visually-hidden">80%</span></div>
+                                    <div class="progress-bar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30" style="width: 30%;"><span class="visually-hidden">30%</span></div>
                                 </div>
                             </div>
                         </div>
@@ -123,15 +143,18 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-1"><i class="icon ion-person icon"></i></div>
-                                    <div class="col-9"><span>John Smith</span></div>
+                                    <div class="col-9"><span>Susana Gamboa</span></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-1"><i class="icon ion-ios-telephone icon"></i></div>
-                                    <div class="col-9"><span>+235 3217 424</span></div>
+                                    <div class="col-9"><span>+569 3234 6607</span></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-1"><i class="icon ion-at icon"></i></div>
-                                    <div class="col-9"><span>lorem@email.com</span></div>
+                                    <div class="col-9"><span>sugamlake@gmail.com</span></div>
+                                    <div class="links">
+                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -141,15 +164,22 @@
                     <div class="heading">
                         <h2 class="text-center">Hobbies</h2>
                     </div>
-                    <p class="text-center text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras risus ligula, iaculis ut metus sit amet, luctus pharetra mauris. Aliquam purus felis, pretium vel pretium vitae, dapibus sodales ante. Suspendisse potenti. Duis nunc eros.</p>
+                    <p class="text-center text-muted">I live in a place surrounded by beauty and nature, I love trekking, cycling, fishing, water and winter sports, I have a family of 3, my husband and a cat named fufú who always accompanies us in all our adventures.</p>
                 </div>
             </div>
         </section>
     </main>
     <footer class="bg-dark page-footer">
         <div class="container">
-            <div class="links"><a class="link-light" href="#">About me</a><a class="link-light" href="#">Contact me</a><a class="link-light" href="#">Projects</a></div>
-            <div class="social-icons"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-instagram-outline"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a></div>
+            <div class="links">
+                <a class="btn btn-primary" href="mailto:sugamlake@gmail.com">Contactme</a>
+                <p>  Copyright 2022</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Sugamlake" target="_blank"><i class="icon ion-social-github"></i></a>
+                <a href="https://www.linkedin.com/in/susana-gamboa-26038522b/" target="_blank"><i class="icon ion-social-linkedin"></i></a>
+                <a href="https://twitter.com/home?lang=es" target="_blank"><i class="icon ion-social-twitter"></i></a>
+            </div>
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

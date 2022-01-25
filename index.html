@@ -4,26 +4,45 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Susana</title>
+    <title>Home - Susana Gamboa</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="style/styles.css"/>
 </head>
 
 <body>
+   
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark bg-gradient portfolio-navbar gradient">
         <div class="container"><a class="navbar-brand logo" href="index.html">Susana Gamboa</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contactme
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="page lanidng-page">
+    <section class="header">
+        <video src="assets/video/Codigo bola - 49642.mp4" muted autoplay></video> <!--aquí va el video de presentación de la pág web-->
+        <div class="header_info">
+            <div class="header_infoType">
+                <h2>My Portfolio</h2>
+            </div>
+            <div class="header_infoText">
+                <h1>Welcome to <br> my web site</h1>
+            </div>
+        </div>
+    </section>
+    <main class="page lanidng-page bg-warning"> <!-- contenido principal, agregamos un color que abarca toda la pantalla-->
         <section class="portfolio-block block-intro">
             <div class="container">
                 <div class="heading" id="about-me">
@@ -31,92 +50,56 @@
                 </div>
                 <div id="avatar" style="background-image: url(assets/img/avatars/avatar.jpg);"></div><br>
                 <div class="about-me">
-                    <p>Hello! my name is <strong>Susana</strong> and I am doing a Professional Certification in FullStack Web Development with Mern from MIT. I am passionate about the world of programming and software development, with knowledge in Html, CSS3, JavaScript, (for now), with experience in automation engineering. In addition, I enjoy working as a team, and I always maintain the interest in giving solutions to technological problems, I am looking for an internship to strengthen and enhance my knowledge in a company that gives me opportunities to get the best of my skills... do you want to know me? let's have a virtual coffee</p>
+
+                    <p>Hello! my name is <strong>Susana</strong> I welcome you to my page, where you will learn about my skills, background and studies in programming, you should know that what you will see is only the tip of the iceberg.....come with me!!</p>
+                    <div id="carouselExampleIndicators" class="carousel slide carousel-color" 
+                    data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/img/nature/pacman.gif" class="d-block w-100" alt="Animación de varios pacmen">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/nature/eyes.gif" class="d-block w-100" alt="Ojos que siguen al mouse">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/nature/map.gif" class="d-block w-100" alt="Se muestran las paradas del autobus a Harvard">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                     <div class="video-responsive">
                         <iframe src="https://www.youtube-nocookie.com/embed/dIwC890RCRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div><br>
                 </div>
             </div>
             <div id="contact-me">
-                <p><i class="icon ion-social-github"></i><strong>Github: </strong>Sugamlake</p>
-                <p><i class="icon ion-social-linkedin"></i><strong>LinkedIn: </strong>Susana Gamboa</p>
-                <p><i class="icon ion-social-twitter"></i><strong>Twitter: </strong>@sussy183</p>
-                <p><i class="icon ion-social-whatsapp"></i><strong>Whatsapp: </strong>+56 9 3234 6607</p>
-                <a class="btn btn-secondary" role="button" href="#">Hire me</a>
-                <a class="btn btn-secondary" role="button" href="#">Hire me</a>
+                <a href="https://github.com/Sugamlake" target="_blank"><i class="icon ion-social-github"></i><strong>Github: </strong>Sugamlake</p>
+                <a href="https://www.linkedin.com/in/susana-gamboa-26038522b/" target="_blank"><i class="icon ion-social-linkedin"></i><strong>LinkedIn: </strong>Susana Gamboa</p>
+                <a href="https://twitter.com/home?lang=es" target="_blank"><i class="icon ion-social-twitter"></i><strong>Twitter: </strong>@sussy183</p>
+                <a><i class="icon ion-social-whatsapp"></i><strong>Whatsapp: </strong>+56 9 3234 6607</p> 
+                    
             </div>
         </section>
-        <section class="portfolio-block photography">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="projects.html"><img class="img-fluid image" src="assets/img/nature/pacman.gif"></a></div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="projects.html"><img class="img-fluid image" src="assets/img/nature/eyes.gif"></a></div>
-                    <div class="col-md-6 col-lg-4 item zoom-on-hover"><a href="projects.html"><img class="img-fluid image" src="assets/img/nature/map.gif"></a></div>
-                </div>
-            </div>
-        </section>
-        <section class="portfolio-block call-to-action border-bottom">
-            <div class="container">
-                <div class="d-flex justify-content-center align-items-center content">
-                    <h3>Like what you see?</h3><button class="btn btn-secondary btn-lg" type="button">Hire me</button>
-                </div>
-            </div>
-        </section>
-        <section class="portfolio-block skills">
-            <div class="container">
-                <div class="heading">
-                    <h2>Special Skills</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline bg-dark"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Front End</h3>
-                                <ul>
-                                    <li>HTML5</li>
-                                    <li>CSS3</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-lightbulb-outline bg-dark"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Back End</h3>
-                                <ul>
-                                    <li>Javascript</li>
-                                    <li>ExpressJS</li>
-                                    <li>API</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-gear-outline bg-dark"></i></div>
-                            <div class="card-body">
-                                <h3 class="card-title">Frameworks</h3>
-                                <ul>
-                                    <li>Bootstrap</li>
-                                    <li>React</li>
-                                    <li>NodeJS</li>
-                                    <li>AngularJS</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    
     </main>
     <footer class="bg-dark page-footer">
         <div class="container">
             <div class="links">
-                <a class="link-light" href="#about-me">About me</a>
-                <a class="link-light" href="#contact-me">Contact me</a>
-                <a class="link-light" href="projects.html">Projects</a>
+                <a class="btn btn-primary" href="mailto:sugamlake@gmail.com">Contactme</a>
+                <br>
+                <p>  Copyright 2022</p>
             </div>
             <div class="social-icons">
                 <a href="https://github.com/Sugamlake" target="_blank"><i class="icon ion-social-github"></i></a>
