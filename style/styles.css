@@ -175,6 +175,16 @@ p {
 
 }
 
-#contact-me > img{
-   
+.card {   /*hacer que todos los videos sean del mismo tamaño */
+    width: auto;
+    height: 400px;
+    object-fit: cover;
 }
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+
+}
+
