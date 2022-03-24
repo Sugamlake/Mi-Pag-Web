@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-/*Header*/
+/* HEADER SECTION */
 
 .header{    /*es el tamaño para el elemento que contiene el video, etiqueta section */
     position:relative;
@@ -14,7 +14,36 @@
 .header > video {
     height: 100%;
     width: 100%;
-    object-fit: cover; /*ajusta las dimensiones del video sin deformarse*/
+    object-fit: cover; /*ajusta las dimensiones del video sin deformarse
+                        queda pendiente para ver como queda con el otro codigo de netflix*/
+} 
+
+.header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.header .video__video {
+    height: 100%;
+    width: 100%;
+}
+
+.header__header video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header__video::after {       /* Es para hacer que el fondo se difumine con el video*/
+    content:"";
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(0, 0, 0, 0.9); /*difuminado, la transparencia es de 0.7*/
+
 }
 
 .header_info { /*clase header info, donde encerramos el texto y los botones, todo lo que este dentro con el position absolute no se va a poder mover, con el top 50 con el eje y se quede centrado*/
