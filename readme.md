@@ -1,10 +1,6 @@
-# Hola soy Susana 
+# Hi I'm Susana Gamboa
 
-Mi página Web
+Welcome to my website
 
-esta es una demostración
+Here you will find all my work done.
 
-
-### soy de Chile
-
-Muestro todos mis trabajos
